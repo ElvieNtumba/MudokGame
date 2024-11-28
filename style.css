@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-color:wheat ; 
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-backround-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+}
+
+.bird{
+    height: 100px;
+    width: 130px;
+    position: fixed;
+    top: 40vh;
+    left: 30vh;
+    z-index: 100;
+}
+
+.pipe_sprite{
+    position:fixed;
+    top: 40px;
+    left: 100px;
+    height: 70vh;
+    width: 6vw;
+    background: radial-gradient(violet 50%, purple);
+    border: 5px solid black;
+}
+
+.message{
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.messageStyle{
+    background: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5%;
+}
+
+.score{
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.score_value{
+    color: pink;
+    font-weight: bold;
+}
+
+@media only screen and (max-width : 1080px){
+    .message{
+        font-size: 4vh;
+        top:50%;
+        white-space: nowrap;
+    }
+    .score{
+        font-size: 8vh;
+    }
+    .bird{
+        width: 120px;
+        height: 90px;
+    }
+    .pipe_sprite{
+        width: 14vw;
+    }
+}
